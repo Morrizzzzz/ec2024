@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raking EC 2024 eScience</title>
+</head>
+<body>
+    <h1>Raking EC 2024 eScience</h1>
+    <!-- Begin ranking widget Flexvoetbal  --> 
+    <div class="ranking-widget"> 
+        <div class="ranking-widget-fetch-area"> 
+            <script> 
+                fetch('https://www.flexvoetbal.nl/rankingpoolwidget/11b56a65e9ac0107d1b2c9ef835b70fe/123/') 
+                .then((r) => r.text()) 
+                .then((h) => document.querySelector('.ranking-widget-fetch-area').innerHTML = h); 
+            </script> 
+        </div> 
+        <div class="ranking-widget-footer" style="display: flex; align-items: center; justify-content: end; font-size: 12px; color: #999999;"> 
+            Ranglijst mogelijk gemaakt door 
+            <a href="https://www.flexvoetbal.nl" target="_blank" rel="noopener" style="color: #999999; text-decoration: none; display: flex; align-items: center;"> 
+                <img src="https://cdn01.flexvoetbal.nl/gfx/core/logo-branding-flexvoetbal.png" height="16px" style="width: auto; height: 16px; display: inline; border: none; margin: 0 5px;" /> 
+                dé wk pool engine
+            </a> 
+        </div> 
+    </div>
+    <!-- End ranking widget Flexvoetbal -->
+</body>
+</html>
